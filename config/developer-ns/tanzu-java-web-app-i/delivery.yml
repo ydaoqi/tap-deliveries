@@ -39,7 +39,7 @@ spec:
           spring-boot-convention/app-live-view-appflavours-boot
         developer.apps.tanzu.vmware.com/image-source-digest: tapgitopsdgpkl.azurecr.io/tap/tap-source-proxy:developer-ns-tanzu-java-web-app-i@sha256:ad40090b66a72ce55c453abdfb562f56d90c3289ca65d61176baadc3c623ac8b
         developer.conventions/target-containers: workload
-        local-source-proxy.apps.tanzu.vmware.com: tapgitopsdgpkl.azurecr.io/tap/tap-source-proxy:developer-ns-tanzu-java-web-app-i@sha256:4834c964f96493857bdd9781f8b7cd4fea6f5a68adb07394567addc8e466c795
+        local-source-proxy.apps.tanzu.vmware.com: tapgitopsdgpkl.azurecr.io/tap/tap-source-proxy:developer-ns-tanzu-java-web-app-i@sha256:11c9d46881144f8bad0196557b15909ad988774e57e4aca34be5e73756d3c32d
       labels:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: tanzu-java-web-app-i
