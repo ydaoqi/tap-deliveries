@@ -37,9 +37,9 @@ spec:
           spring-boot-convention/app-live-view-appflavour-check
           spring-boot-convention/app-live-view-connector-boot
           spring-boot-convention/app-live-view-appflavours-boot
-        developer.apps.tanzu.vmware.com/image-source-digest: tapgitopsdgpkl.azurecr.io/tap/tap-source-proxy:developer-ns-tanzu-java-web-app-i@sha256:01bf6722d62faf4efa503967bb957aa2284848084e56b68bd48b71c97db87078
+        developer.apps.tanzu.vmware.com/image-source-digest: tapgitopsdgpkl.azurecr.io/tap/tap-source-proxy:developer-ns-tanzu-java-web-app-i@sha256:2c6d00b6fae9e8f08ccd26a5206f4a25739bf2f7f63c6b0796d0edb5afa489fa
         developer.conventions/target-containers: workload
-        local-source-proxy.apps.tanzu.vmware.com: tapgitopsdgpkl.azurecr.io/tap/tap-source-proxy:developer-ns-tanzu-java-web-app-i@sha256:ab8daab47c7848a8c29401b091c15df0efb52635cf84c87ce241d637293ccb0c
+        local-source-proxy.apps.tanzu.vmware.com: tapgitopsdgpkl.azurecr.io/tap/tap-source-proxy:developer-ns-tanzu-java-web-app-i@sha256:2c6d00b6fae9e8f08ccd26a5206f4a25739bf2f7f63c6b0796d0edb5afa489fa
       labels:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: tanzu-java-web-app-i
@@ -62,7 +62,7 @@ spec:
           value: "9005"
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: tapgitopsdgpkl.azurecr.io/tap/tap-images/workloads/tanzu-java-web-app-i-developer-ns@sha256:8bc06ce9b4b6f883988e3f82108902407810dbf8b7910563b3327e82ff529a22
+        image: tapgitopsdgpkl.azurecr.io/tap/tap-images/workloads/tanzu-java-web-app-i-developer-ns@sha256:62840340eb48d62ad7b1cbdc29bf65861b620625c00d93e0ac75584abe4a4873
         livenessProbe:
           httpGet:
             path: /livez
